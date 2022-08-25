@@ -1,6 +1,14 @@
+// Boostrap 5
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
-
-
-@import './layout/index.scss'
+// 設定:
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import './variable.scss';
+@import './reset.scss';
+@import './base.scss';
+@import './util.scss';
+// layout
+@import './layout/layout.scss';
+@import './index.scss';
+@import './admin.scss';
