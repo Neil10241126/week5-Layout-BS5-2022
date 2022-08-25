@@ -6,71 +6,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boostrap Index</title>
+    <!-- Google Fonts Icon載入 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 預設 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    
-
-    
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container">
+      <aside class="d-flex  flex-column justify-content-between">
+        <div>
+          <h1 class="logo"><a href="./index.html">logo</a></h1>
+          <ul class="menu">
+            <li class="mb-3">
+              <a class="d-flex fw-bold py-1" href="#">
+                <span class="material-icons pe-3">insert_chart</span>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a class="d-flex fw-bold py-1" href="#">
+                <span class="material-icons pe-3">question_answer</span>
+                <p>Question</p> 
+              </a>
+            </li>
+            <li class="mb-3">
+              <a class="d-flex fw-bold py-1" href="./index.html">
+                <span class="material-icons pe-3">assignment</span>
+                <p>Assignment</p>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a class="d-flex fw-bold py-1" href="#">
+                <span class="material-icons pe-3">video_library</span>
+                <p>Course</p>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a class="d-flex fw-bold py-1" href="./admin.html">
+                <span class="material-icons pe-3">group</span>
+                <p>Admin</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex fw-bold py-1" href="#">
+                <span class="material-icons pe-3">settings</span>
+                <p>Settings</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="avater d-flex align-items-center">
+          <img class="rounded-circle me-3" src="./assets/images/andychen.jpeg" alt="">
+          <div>
+            <h3 class="fw-bold mb-1">Andy Chen</h3>
+            <a href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+          </div>
+        </div>
+      </aside>
+      
+  
+      
+<main>
+  <section class="top-bar mb-44">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <h2 class="fw-bold">Assignment</h2>
+        <div>
+          <a class="dropdown d-flex" href="#">
+            <p class="fw-bold">All Courses</p>
+            <span class="material-icons text-success">expand_more</span>
+          </a>
+          <div class="dropdown-open position-absolute py-1 border border-secondary border-3 rounded">
+            <a class="py-2 px-1" href="#">Chapter Assignment 1</a>
+            <a class="py-2 px-1" href="#">Chapter Assignment 2</a>
+            <a class="py-2 px-1" href="#">Final Assignment</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <div class="d-flex align-items-center">
+        <a href="#"><span class="material-icons d-block">search</span></a>
+        <a href="#"><span class="material-icons d-block ms-4">notifications_active</span></a>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
+  <section class="d-flex justify-content-between">
+    <div class="list">
+      <div class="mb-6">
+        <a class="dropdown d-flex" href="#">
+          <p class="fw-bold mr-9">All (4)</p>
+          <span class="material-icons text-success">expand_more</span>
+        </a>
+        <div class="dropdown-open position-absolute py-1 border border-secondary border-3 rounded">
+          <a class="py-2 px-1" href="#">Emily Wang</a>
+          <a class="py-2 px-1" href="#">David Xu</a>
+          <a class="py-2 px-1" href="#">Christina Lin</a>
+        </div>
+      </div>
 
+      <ul>
+        <li class="card">
+          <a class="p-12" href="#">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <p class="font-12">Chapter Assignment 2</p>
+              <p class="font-12">4 hrs ago</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="fw-bold">Please check this file…</p>
+              <p class="font-12">Emily Wang</p>
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a class="p-12" href="#">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <p class="font-12">Chapter Assignment 1</p>
+              <p class="font-12">12 hrs ago</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="fw-bold">My Homework</p>
+              <p class="font-12">David Xu</p>
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a class="p-12" href="#">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <p class="font-12">Final Assignment</p>
+              <p class="font-12">18 hrs ago</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="fw-bold">Have a problem with this…</p>
+              <p class="font-12">Tony Wei</p>
+            </div>
+          </a>
+        </li>
+        <li class="card">
+          <a class="p-12" href="#">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <p class="font-12">Final Assignment</p>
+              <p class="font-12">19 hrs ago</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="fw-bold">Did I do it right?</p>
+              <p class="font-12">Christina Lin</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="commit">
+      <p class="text-end font-12 text-gray600 mb-12">2 comments</p>
+      <div>
+        <div class="d-flex align-items-center justify-content-between bgr-primary py-12 px-3">
+          <div>
+            <p class="font-12 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+            <p class="fw-bold">Please check this file for me, thanks!</p>
+          </div>
+          <a href="#"><span class="material-icons d-block">more_vert</span>
+          </a>
+        </div>
+      </div>
+
+      <ul class="border pb-12">
+        <li class="d-flex pt-3 px-3">
+          <img class="rounded-circle mr-9" src="./assets/images/emilywang.jpeg" alt="">
+          <div class="border-bottom pb-3">
+            <h3 class="fw-bold mb-1">Emily Wang</h3>
+            <time class="font-12 text-gray600 d-block mb-3">10:38 AM (4 hours ago)</time>
+            <p class="font-14 text-gray900 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a <br> question: Why in the following code the height of the div is bigger than the <br> height of the <span class="text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be <br> a padding/margin. <br> What is the gap or extra space below image?</p>
+            <a class="download border d-flex align-items-center fw-bold text-gray900 py-8 bgr-primary" href="#" download="HW-2-David.zip"><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a>
+          </div>
+        </li>
+        <li class="hide d-flex pt-3 px-3">
+          <img class="rounded-circle mr-9" src="./assets/images/andychen.jpeg" alt="">
+          <div>
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="fw-bold mb-1">Andy Chen (You)</h3>
+              <div class="d-flex">
+                <a href="#"><span class="material-icons d-block">star_outline</span></a>
+                <a href="#"><span class="material-icons d-block ms-4">edit</span></a>
+              </div>
+            </div>
+            <time class="font-12 text-gray600 d-block mb-3">13:24 AM (1 hours ago)</time>
+            <p class="font-14 text-gray900 mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the <br> same line that a, b, c and d sit on. There is space below that line for the <br> descenders you find on letters like g, j, p and q. <br> <span class="my-3 d-block">You can:</span> 　• adjust the <span class="text-success">vertical-align</span> of the image to position it elsewhere <br> (e.g. <span class="text-success">middle</span>le   ) or <br>　• change the <span class="text-success">display</span> so it isn’t inline.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="reply-box d-none">
+        <div class="py-9 bgr-primary d-flex align-items-center border">
+          <div class="btn-group me-4 ml-12">
+            <button type="button" class="btn fw-bold ">Body Text</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Lato</a></li>
+              <li><a class="dropdown-item" href="#">Roboto</a></li>
+              <li><a class="dropdown-item" href="#">New Chinese</a></li>
+            </ul>
+          </div>
+          <ul class="d-flex">
+            <li class="me-4"><a href="#"><span class="material-icons d-block">format_bold</span></a></li>
+            <li class="me-4"><a href="#"><span class="material-icons d-block">format_italic</span></a></li>
+            <li class="me-4"><a href="#"><span class="material-icons">format_list_bulleted</span></a></li>
+            <li class="me-4"><a href="#"><span class="material-icons d-block">format_list_numbered</span></a></li>
+            <li class="me-4"><a href="#"><span class="material-icons d-block">image</span></a></li>
+            <li class="me-4"><a href="#"><span class="material-icons d-block">insert_link</span></a></li>
+            <li><a href="#"><span class="material-icons d-block">code</span></a></li>
+          </ul>
+        </div>
+        <textarea class="px-4 py-3 border" name="" id="" cols="64" rows="7" placeholder="Reply an answer…"></textarea>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <div class="d-flex">
+          <a class="chevron me-4" href="#"><span class="material-icons">chevron_left</span></a>
+          <a class="chevron" href="#"><span class="material-icons">chevron_right</span></a>
+        </div>
+        <div>
+          <a class="back-btn btn btn-outline-success fw-bold" href="#">Mark as read</a>
+          <a class="reply-btn btn btn-success fw-bold ms-3" href="#">Reply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>
+    </div>
     
     <!-- 範本預設模組 Boostrap 5 -->
     <script src="./assets/js/vendors.js"></script>
+    <!-- jQuery 模組 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/all.js"></script>
   </body>
+  
 
 </html>

@@ -11564,6 +11564,59 @@ fieldset:disabled .btn {
   }
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, .small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, .mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -11580,11 +11633,231 @@ img {
 body {
   line-height: 1.5;
   font-family: 'Lato', sans-serif;
+  color: #212529;
 }
 
 a {
   text-decoration: none;
   display: block;
+  color: #212529;
+}
+
+a:hover {
+  color: #198754;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.pt-18 {
+  padding-top: 18px !important;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.py-8 {
+  padding: 8px 0;
+}
+
+.px-16 {
+  padding: 0 16px;
+}
+
+.py-9 {
+  padding: 9px 0;
+}
+
+.py-12 {
+  padding: 12px 0;
+}
+
+.py-18 {
+  padding: 18px 0;
+}
+
+.mr-9 {
+  margin-right: 9px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-44 {
+  margin-bottom: 44px;
+}
+
+.text-success {
+  color: #198754;
+}
+
+.text-gray600 {
+  color: #6C757D;
+}
+
+.text-gray900 {
+  color: #212529;
+}
+
+.bgr-primary {
+  background: #F8F9FA;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+aside {
+  min-width: 296px;
+  height: 800px;
+  position: absolute;
+  background: #F8F9FA;
+}
+
+aside .logo {
+  margin: 32px 0 32px 32px;
+}
+
+aside .logo a {
+  background-image: url(../images/logo-ANSWER.svg);
+  width: 151px;
+  height: 40px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+aside .logo a:hover {
+  opacity: 0.7;
+}
+
+aside .menu a {
+  color: #212529;
+  padding-left: 32px;
+}
+
+aside .menu a:hover {
+  border-left: 4px solid #198754;
+  color: #198754;
+}
+
+.avater {
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+
+.avater img {
+  width: 40px;
+  height: 40px;
+}
+
+.avater a {
+  font-size: 14px;
+  color: #6C757D;
+}
+
+.avater a:hover {
+  color: #198754;
+}
+
+main {
+  -webkit-transform: translateX(296px);
+      -ms-transform: translateX(296px);
+          transform: translateX(296px);
+  width: 984px;
+  padding: 32px;
+}
+
+main .top-bar h2, main .top-bar .h2 {
+  font-size: 24px;
+  line-height: 1.375;
+  margin-right: 50px;
+}
+
+main .top-bar p {
+  margin-right: 9px;
+}
+
+main .top-bar .dropdown p:hover, main .top-bar .dropdown .active p {
+  color: #198754 !important;
+}
+
+main .top-bar .dropdown-open {
+  display: none;
+  z-index: 1;
+  background: #fff;
+}
+
+main .top-bar .dropdown-open a:hover {
+  background: #198754;
+  color: #fff !important;
+}
+
+.list {
+  width: 320px;
+}
+
+.list .dropdown-open {
+  display: none;
+  z-index: 1;
+  background: #fff;
+}
+
+.list .dropdown-open a:hover {
+  background: #198754;
+  color: #fff !important;
+}
+
+.list li:hover {
+  background: #F8F9FA;
+}
+
+.commit {
+  width: 584px;
+}
+
+.commit img {
+  min-width: 40px;
+  height: 40px;
+}
+
+.commit .download {
+  width: 176px;
+  padding-left: 12px;
+}
+
+.commit .none {
+  display: none !important;
+}
+
+.commit .change {
+  display: block !important;
+}
+
+.page-item a:hover {
+  background: #198754;
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=all.css.map */
