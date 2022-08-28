@@ -11654,8 +11654,16 @@ a:hover {
   font-size: 14px;
 }
 
+.p0 {
+  padding: 0;
+}
+
 .p-12 {
   padding: 12px;
+}
+
+.p-32 {
+  padding: 32px;
 }
 
 .pt-18 {
@@ -11722,6 +11730,10 @@ a:hover {
   background: #F8F9FA;
 }
 
+.bgr-fff {
+  background: #fff;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -11782,9 +11794,7 @@ aside .menu a:hover {
 }
 
 main {
-  -webkit-transform: translateX(296px);
-      -ms-transform: translateX(296px);
-          transform: translateX(296px);
+  margin-left: 296px;
   width: 984px;
   padding: 32px;
 }
